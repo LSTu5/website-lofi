@@ -1,0 +1,45 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: navy;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 12px 20px;
+    overflow: hidden; /* This ensures that the container doesn't collapse */
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    float: right; /* Apply float to the entire ul */
+}
+
+.nav-links li {
+    float: left; /* Float each li to the left to keep them in order */
+    margin-right: 10px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: plum;
+}
+
+.nav-links li a.active {
+    color: #1a73e8;
+    background-color: #f8f9fa;
+}
+
